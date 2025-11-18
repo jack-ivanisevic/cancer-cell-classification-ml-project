@@ -1,117 +1,94 @@
-# Cancer Cell Classification – Machine Learning Project
+# Cancer Cell Classification – Machine Learning Case Study
 
 ## Overview
 
-This project demonstrates a full machine learning pipeline designed to classify cancer cells using image data. The workflow includes dataset preparation, image preprocessing, feature extraction, model training, evaluation, and performance analysis.
+This case study summarizes a machine learning project focused on classifying cancer cell images using supervised learning techniques. The objective was to determine whether microscopy images contain cancerous or non-cancerous cells using both classical ML methods and convolutional neural networks (CNNs).
 
-The objective is to identify whether microscopy images contain cancerous or non-cancerous cells using classical machine learning techniques and/or convolutional neural networks (CNNs), depending on the dataset and approach.
-
-This project was originally completed as part of the Fanshawe College AI/ML program and is reconstructed here as a full technical portfolio example.
+This work was originally completed as part of the Fanshawe College AI/ML program and is presented here as a technical and analytical summary—not as a downloadable or runnable code repository.
 
 ---
 
 ## Project Objectives
 
-- Build a fully reproducible ML classification workflow  
-- Preprocess and normalize image data for model training  
-- Train and evaluate one or more models (CNN or classical ML)  
-- Compare accuracy, precision, recall, and F1-score  
-- Demonstrate clear code structure and documentation  
-- Provide a notebook that can be run locally on any machine  
+- Explore how AI/ML can assist in early diagnostic workflows  
+- Build an end-to-end ML classification workflow  
+- Prepare, clean, and preprocess image data  
+- Compare classical ML models with CNN-based approaches  
+- Interpret performance using appropriate diagnostic metrics  
+- Document insights, limitations, and future considerations  
 
 ---
 
-## ML Workflow
+## ML Workflow Summary
 
 ### 1. Data Preparation
-- Resize and normalize image data  
-- Train/validation split  
-- Label encoding  
-- Optional: grayscale conversion or histogram equalization  
+- Standardized microscope images for consistency  
+- Applied normalization and resizing techniques  
+- Encoded labels for binary classification  
+- Considered optional enhancements such as grayscale conversion and contrast adjustments  
 
-### 2. Model Development
-Two approaches are demonstrated:
+### 2. Model Development Approaches
 
-**A. Convolutional Neural Network (CNN)**  
-- Feature extraction performed automatically via convolutions  
-- Suitable for complex image data  
-- Uses Keras/TensorFlow or PyTorch  
+#### A. Convolutional Neural Network (CNN)
+- Automatically extracts spatial features  
+- Well-suited for image-based classification  
+- Demonstrated stronger performance compared to classical models  
 
-**B. Classical ML Approach (if applicable)**  
-- Extract features manually using image descriptors  
-- Models may include SVM, Random Forest, or Logistic Regression  
+#### B. Traditional Machine Learning (if features extracted)
+- Feature descriptors derived from image processing  
+- Models explored may include SVM, Random Forest, Logistic Regression  
+- Useful as a performance benchmark against deep learning  
 
-### 3. Training & Evaluation
-- Model training using training set  
-- Evaluation using validation/test set  
-- Metrics include:  
-  - Accuracy  
-  - Precision  
-  - Recall  
-  - F1-score  
-  - Confusion matrix  
+### 3. Evaluation Methodology
+Performance was reviewed using:
 
-### 4. Results & Analysis
-- Side-by-side model comparison  
-- Visualization of predictions  
-- Analysis of false positives and false negatives  
-- Notes on model limitations and improvements  
+- Accuracy  
+- Precision  
+- Recall  
+- F1-score  
+- Confusion matrix  
+- Inspection of false positives/false negatives  
 
----
-
-## Repository Structure
-
-```
-cancer-cell-classification-ml-project/
-│
-├── data/                # Placeholder for dataset (not included)
-├── notebooks/
-│   └── cancer_cell_classification.ipynb  # Main ML notebook
-├── models/              # Saved models (if applicable)
-├── utils/               # Helper scripts (preprocessing, loaders, etc.)
-└── README.md            # Project documentation
-```
+### 4. Findings & Analysis
+- CNNs provided significantly better accuracy due to superior pattern recognition  
+- Classical models performed adequately when supported by strong feature engineering  
+- Preprocessing quality had a major influence on model stability  
+- Metrics beyond accuracy were essential to judge real diagnostic usefulness  
 
 ---
 
-## Requirements
+## Key Insights
 
-This project will include a `requirements.txt` file containing (at minimum):
-
-- Python 3.x  
-- TensorFlow or PyTorch  
-- NumPy  
-- Pandas  
-- Matplotlib  
-- Scikit-learn  
-- OpenCV (optional, for preprocessing)  
+- AI can meaningfully reduce manual image screening workload  
+- Neural networks outperform traditional ML in complex image interpretation  
+- Data quality and preprocessing are critical to medical ML solutions  
+- False negatives are the highest-risk outcome and require careful evaluation  
+- AI should complement—never replace—professional diagnostic review  
 
 ---
 
-## How to Run This Project
+## Limitations & Future Work
 
-1. Clone the repository  
-2. Install dependencies via `pip install -r requirements.txt`  
-3. Download or place dataset in the `/data` directory  
-4. Open the notebook in `notebooks/`  
-5. Run all cells to reproduce the training process  
-
-A full step-by-step “How to Run” guide will be added when the notebook is uploaded.
+- Larger datasets would improve generalization  
+- Data augmentation could reduce overfitting  
+- Explainability tools (e.g., Grad-CAM) could enhance trust and interpretability  
+- A lightweight deployment model could support real-world trial applications  
 
 ---
 
-## Next Steps
+## Purpose of This Repository
 
-The next commits to this repository will include:
+This repository serves as a **portfolio case study**, providing:
 
-- Fully documented Jupyter notebook  
-- Model training results  
-- Visualizations  
-- Optional hyperparameter tuning  
-- Optional deployment example (Flask API or lightweight UI)
+- A high-level overview of the ML workflow  
+- A description of tasks completed  
+- A summary of results, insights, and business implications  
+- A demonstration of applied knowledge in machine learning and image classification  
+
+**No runnable code, datasets, or notebooks are provided in this repository.**
 
 ---
 
 ## Contact
 
-For questions about this project or other AI/ML work, feel free to reach out.
+For questions or discussion about machine learning, AI projects, or this case study, feel free to reach out.
